@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Norrmade Digital Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet ">
+</head>
+<style>
+    body {
+        background-color: #f7f5f2;
+    }
+    .img {
+        margin: 0 auto;
+        max-width : 50%;
+        height: auto;
+        display: block;
+
+    }
+    .text-center {
+        text-align: center;
+        color: #555555;
+        margin: 50px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+</style>
+<body>
+
+    <header class="header">
+
+    <h1 class="text-center">The Digital Showroom</h1>
+    </header>
+
+    <div class="container">
+        <img class="img" height="300px" src="img/norrmadetest.png" usemap="#image-map">
+
+            <map name="image-map">
+                <area target="_blank" alt="bench" title="bench" href="https://norrmade.dk/produkt/sheep/" coords="330,892,605,641" shape="rect">
+                <area target="_blank" alt="chairs" title="chairs" href="https://norrmade.dk/produkt/lift-off/" coords="488,599,670,414" shape="rect">
+                <area target="_blank" alt="table" title="table" href="https://norrmade.dk/produkt/steward/" coords="" shape="rect">
+            </map>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="library/jquery.maphilight.js"></script>
+    <script src="library/main.js"></script>
+    <script>
+        $('.img').maphilight();
+    </script>
+</body>
+</html>
