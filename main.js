@@ -1,3 +1,4 @@
+/* PREVENT AREA EXTERNAL LINK */
 $("#1,#2,#3").on("click", function(e){
     e.preventDefault();
 });
