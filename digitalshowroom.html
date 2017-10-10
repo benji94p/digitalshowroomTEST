@@ -40,16 +40,41 @@
         <img class="img"  src="img/norrmadetest.png" usemap="#image-map">
 
             <map name="image-map">
-                <area target="_blank" alt="bench" title="bench" href="https://norrmade.dk/produkt/sheep/" coords="330,892,605,641" shape="rect">
-                <area target="_blank" alt="chairs" title="chairs" href="https://norrmade.dk/produkt/lift-off/" coords="488,599,670,414" shape="rect">
-                <area target="_blank" alt="table" title="table" href="https://norrmade.dk/produkt/steward/" coords="" shape="rect">
+                <area id="1" target="_blank" alt="bench" title="bench" href="https://norrmade.dk/produkt/sheep/" coords="330,892,605,641" shape="rect">
+                <area id="2" target="_blank" alt="chairs" title="chairs" href="https://norrmade.dk/produkt/lift-off/" coords="488,599,670,414" shape="rect">
+                <area id="3" target="_blank" alt="table" title="table" href="https://norrmade.dk/produkt/steward/" coords="" shape="rect">
             </map>
     </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="library/jquery.maphilight.js"></script>
-    <script src="library/main.js"></script>
+    <script src="main.js"></script>
     <script>
         $('.img').maphilight();
     </script>
