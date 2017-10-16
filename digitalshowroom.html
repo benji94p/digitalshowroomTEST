@@ -4,53 +4,77 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Norrmade Digital Showroom</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet ">
+    <link href="library/panorama_viewer.css" rel="stylesheet ">
+    <link href="library/animate.css" rel="stylesheet ">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    body {
-        background-color: #f7f5f2;
-    }
-    .img {
-        margin: 0 auto;
-        max-width : 100%;
-        height: auto;
-        display: block;
 
-    }
-    .text-center {
-        text-align: center;
-        color: #555555;
-        margin: 30px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-</style>
 <body>
 
     <header class="header">
-
-    <h1 class="text-center">The Digital Showroom</h1>
+        <img onmouseover="addRemoveOut()" id="logo" class="animated" src="img/NORRMADE-logo.png">
     </header>
 
-    <div class="container">
-        <img class="img"  src="img/norrmadetest.png" usemap="#image-map">
+    <div class="container_photo">
 
-            <map name="image-map">
-                <area id="1" target="_blank" alt="bench" title="bench" href="https://norrmade.dk/produkt/sheep/" coords="330,892,605,641" shape="rect">
-                <area id="2" target="_blank" alt="chairs" title="chairs" href="https://norrmade.dk/produkt/lift-off/" coords="488,599,670,414" shape="rect">
-                <area id="3" target="_blank" alt="table" title="table" href="https://norrmade.dk/produkt/steward/" coords="" shape="rect">
-            </map>
+    <span onmouseover="addFlash(this)" class="glyphicon glyphicon-menu-left glyphicon-lg animated" aria-hidden="true"></span>
+        <img class="img" src="img/norrmadetest2.png" usemap="#image-map" >
+
+        <map name="image-map">
+            <area id="1" target="_blank" alt="Mirror" title="Mirror" href="#" coords="78,135,108" shape="circle">
+            <area id="2" target="_blank" alt="Chair" title="Chair" href="#" coords="323,519,161,280" shape="rect">
+            <area id="3" target="_blank" alt="Sheep" title="Sheep" href="#" coords="353,276,668,495" shape="rect">
+            <area id="4" target="_blank" alt="Table" title="Table" href="#" coords="696,187,915,508" shape="rect">
+        </map>
+
+    <span onmouseover="addFlash(this)" class="glyphicon glyphicon-menu-right glyphicon-lg animated" aria-hidden="true"></span>
+
     </div>
+
+
+
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="container_content">
+                <img id="img_logo" src="">
+                <div id="description_container">
+                    <p id="short_description"></p>
+                </div>
+                <div class="panorama">
+                    <img id="pano-img" src="" alt="" title="" />
+                </div>
+                <div style="
+                        display: grid;
+                        grid-template-columns: 90px auto 90px;
+                    " id="vidpricecontainer">
+                    <iframe id="youtube_vid"
+                    width="640" height="360"
+                    src="https://www.youtube.com/embed/YWHZqhfLTTs"
+                    frameborder="0"
+                    style="border: solid 4px #37474F"
+                    ></iframe>
+
+                    <span id="price"></span>
+
+                </div>
+            </div>
+          </div>
+
+        </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="library/jquery.maphilight.js"></script>
+    <script src="library/jquery.panorama_viewer.min.js"></script>
     <script src="main.js"></script>
-    <script>
-        $('.img').maphilight();
-    </script>
+
 </body>
 </html>
