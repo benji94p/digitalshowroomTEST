@@ -114,3 +114,11 @@ function addRemoveOut () {
 $(function() {
 	$('div.panorama').paver();
 });
+
+/* 36O Image */
+
+
+$("#pano-img").click(function() {
+  $("#pano-img").removeClass( "darken" );
+    document.getElementById("headerpano").style.display ="none";
+});

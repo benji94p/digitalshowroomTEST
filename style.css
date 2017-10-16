@@ -1,7 +1,7 @@
 /* LANDING */
     body {
 
-       background-image: url(img/backgroundgradient.png);
+       background-image: url(img/bg2.png);
         height: 100%;
         width: 100%;
     }
@@ -20,6 +20,11 @@
         margin: 30px;
         font-family: 'Montserrat', sans-serif;
     }
+
+    #headerpano {
+                position: relative;
+                top: 48%;
+            }
 
     /* MODAL */
 
@@ -128,6 +133,14 @@
             position: relative;
             left: 10%;
         }
+
+        /*360 IMAGE */
+
+        .darken {
+            opacity: 0.4;
+        }
+
+
 
         /* PANORAMA */
 
