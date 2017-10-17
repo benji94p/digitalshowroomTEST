@@ -3,6 +3,15 @@
 
         height: 100%;
         width: 100%;
+        font-family: 'Lora', serif;
+    }
+
+    .yellow {
+        color: #dc9814;
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
     }
 
 /*PARRALAX*/
@@ -49,8 +58,12 @@
 /*INTRO*/
     #header_intro {
          text-align: center;
-         padding-top: 80px;
          color: white;
+        padding-top: 40px;
+        padding-bottom: 61px;
+        border-bottom: 1px solid #dc9814;
+        width: 29%;
+        margin: 0 auto;
         }
 
     #p_intro {
@@ -157,6 +170,7 @@
         .header {
         width: 100%;
         text-align: center;
+        padding-bottom: 20px;
         }
 
         #price {

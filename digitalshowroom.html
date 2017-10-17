@@ -7,7 +7,7 @@
     <head>
       <link rel="shortcut icon" type="image/x-icon" href="img/NORRMADE-logo.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet ">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat" rel="stylesheet">
     <link href="library/panorama_viewer.css" rel="stylesheet ">
     <link href="library/animate.css" rel="stylesheet ">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -23,7 +23,7 @@
     <div class="parallax">
         <h1 id="header_intro">The Digital Showroom</h1>
 
-        <p id="p_intro">Our concept for the digital showroom is an interactive  slider catalog.<br>  The user is able to select and get informations on different products directly on the image. <br> This allow Norrmade to display their products in their context and give a feeling to the user of Norrmade's values/ philosophy. It also showcase how several Norrmade product would fit in an interior.
+        <p id="p_intro">Our concept for the <span class="yellow">digital</span> showroom is an <span class="yellow">interactive</span>  slider catalog.<br>  The user is able to select and get informations on different <span class="yellow">products</span> directly on the image. <br> This allow Norrmade to display their products in their context and give a <span class="yellow">feeling</span> to the user of Norrmade's values/ philosophy.<br> It also showcase how several Norrmade product would fit in an interior.
 </p>
     </div>
     <div class="container_photo">
@@ -64,12 +64,10 @@
                         display: grid;
                         grid-template-columns: 90px auto 90px;
                     " id="vidpricecontainer">
-                    <iframe id="youtube_vid"
-                    width="640" height="360"
-                    src="https://www.youtube.com/embed/YWHZqhfLTTs"
-                    frameborder="0"
-                    style="border: solid 4px #37474F"
-                    ></iframe>
+                    <video id="youtube_vid" width="640" height="360" controls>
+                      <source src="art%20interview%20(color%20corection).mp4" type="video/mp4">
+                      Your browser does not support HTML5 video.
+                    </video>
 
                     <span id="price"></span>
 
