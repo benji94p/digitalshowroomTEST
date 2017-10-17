@@ -1,13 +1,13 @@
-/* LANDING */
+/*GENERAL*/
     body,html {
 
         height: 100%;
         width: 100%;
     }
 
-/*INTRO*/
+/*PARRALAX*/
 
-.parallax {
+    .parallax {
     /* The image used */
     /*background-image: url("Bg%20contrasted.jpg");*/
     background-image: url(img/hero5.png);
@@ -26,38 +26,40 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-@media only screen and (max-device-width: 1024px) {
-    .parallax {
-        background-attachment: scroll;
     }
-}
+
+    @media only screen and (max-device-width: 1024px) {
+        .parallax {
+            background-attachment: scroll;
+        }
+    }
 
 
 
-.container_photo {
-    background-image: url(img/bggradient.png);
-    width: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#header_intro {
-    text-align: center;
-    padding-top: 80px;
-    color: white;
-}
+    .container_photo {
+        background-image: url(img/bggradient.png);
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-#p_intro {
-    width: 40%;
-    color: white;
-    text-align: center;
-    padding-top: 80px;
-    font-size: 18px;
-}
+/*INTRO*/
+    #header_intro {
+         text-align: center;
+         padding-top: 80px;
+         color: white;
+        }
+
+    #p_intro {
+        width: 40%;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            font-size: 18px;
+        }
     .img {
         margin: auto;
         margin-top: 70px;
