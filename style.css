@@ -174,8 +174,21 @@
         }
 
         #price {
-        margin-top: 267px;
-        color: #dc9814;
+        display: flex;
+        position: relative;
+        right: 4%;
+        border-radius: 4px;
+        background-color: #dc9814;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding: 20px;
+        width: fit-content;
+        height: fit-content;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin-top: 275px;
 
         }
 
